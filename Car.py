@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 
 # Load and preprocess the data
-df = pd.read_csv("DataSets/CARS.csv")
+df = pd.read_csv("CARS.csv")
 df.MSRP = df.MSRP.replace("[$,]", "", regex=True).astype('int64')
 df.Invoice = df.Invoice.replace("[$,]", "", regex=True).astype('int64')
 df.Cylinders = df.Cylinders.fillna(0)
